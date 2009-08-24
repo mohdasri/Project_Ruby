@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Judul: MyString
+  Artis: MyString
+  Album: MyString
+  Pengirim: MyString
+  Email: MyString
+  Sumber: MyString
+  Kategori: MyString
+  Lirik: MyText
+
+two:
+  Judul: MyString
+  Artis: MyString
+  Album: MyString
+  Pengirim: MyString
+  Email: MyString
+  Sumber: MyString
+  Kategori: MyString
+  Lirik: MyText

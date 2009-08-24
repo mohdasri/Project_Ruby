@@ -1,0 +1,3052 @@
+  [4;36;1mSQL (15.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (78.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (188.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateNasyids (20090914041650)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "nasyids" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "Judul" varchar(255), "Artis" varchar(255), "Album" varchar(255), "Pengirim" varchar(255), "Email" varchar(255), "Sumber" varchar(255), "Kategori" varchar(255), "Lirik" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090914041650')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("nasyids")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:17:14) [GET]
+
+ActionController::RoutingError (No route matches "/nasyid" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:17:17) [GET]
+
+ActionController::RoutingError (No route matches "/nasyid" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:19:15) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 2109ms (View: 2078, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:19:23) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:24:25) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:24:29) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:24:31) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:24:35) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:24:35) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/header.jpg" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:24:36) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:24:43) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:25:38) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:25:41) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to jpg (for 127.0.0.1 at 2009-09-14 12:25:41) [GET]
+  Parameters: {"id"=>"header"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:25:41) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#create (for 127.0.0.1 at 2009-09-14 12:26:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "nasyid"=>{"Lirik"=>"", "Artis"=>"asdaf", "Sumber"=>"", "Album"=>"asf", "Judul"=>"asdas", "Email"=>"", "Pengirim"=>"", "Kategori"=>""}}
+  [4;35;1mNasyid Create (0.0ms)[0m   [0mINSERT INTO "nasyids" ("Lirik", "updated_at", "Artis", "Album", "Sumber", "Judul", "Email", "Pengirim", "Kategori", "created_at") VALUES('', '2009-09-14 04:26:34', 'asdaf', 'asf', '', 'asdas', '', '', '', '2009-09-14 04:26:34')[0m
+Redirected to http://127.0.0.1:3000/nasyids/1
+Completed in 265ms (DB: 0) | 302 Found [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 12:26:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 1) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/1]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:26:42) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 12:26:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 1) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/1/edit]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:27:12) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:27:17) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:27:18) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to jpg (for 127.0.0.1 at 2009-09-14 12:27:19) [GET]
+  Parameters: {"id"=>"header"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:27:19) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:31:09) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to jpg (for 127.0.0.1 at 2009-09-14 12:31:10) [GET]
+  Parameters: {"id"=>"header"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:31:10) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:31:42) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to jpg (for 127.0.0.1 at 2009-09-14 12:31:43) [GET]
+  Parameters: {"id"=>"header"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:31:43) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:33:28) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#show to jpg (for 127.0.0.1 at 2009-09-14 12:33:29) [GET]
+  Parameters: {"id"=>"header"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Nasyid with ID=header):
+  app/controllers/nasyids_controller.rb:16:in `show'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (265.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:33:29) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:33:46) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#images to jpg (for 127.0.0.1 at 2009-09-14 12:33:46) [GET]
+  Parameters: {"id"=>"header"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:33:47) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:34:22) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:34:22) [GET]
+
+ActionController::RoutingError (No route matches "/nasyids/public/images/header.jpg" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:34:22) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:35:07) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:35:28) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 297ms (View: 265, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:35:28) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:38:20) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:38:20) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:39:13) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 125ms (View: 94, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:39:14) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:39:36) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:39:36) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#create (for 127.0.0.1 at 2009-09-14 12:41:54) [POST]
+  Parameters: {"commit"=>"Hantar", "authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "nasyid"=>{"Lirik"=>"Ingat pesan Rasul junjungan \r\nHiaskanlah dirimu\r\nDengan sifat-sifat yang mulia\r\nIa fitrah semua manusia\r\n\r\nc/o \r\n\r\nSabar redha syukur adalah\r\nSifat-sifat yang mulia\r\nKasih sayang, memaafkan\r\nMestilah menghiasi diri\r\n\r\nLelaki dan wanita, tua atau muda\r\nMesti mengamalkan sifat mahmudah\r\nJika manusia tidak mengamalkan\r\nMereka bukan lagi manusia ", "Artis"=>"Akhlak Bunga Diri", "Sumber"=>"http://liriknasyid.com", "Album"=>"Aeman", "Judul"=>"", "Email"=>"azwanmohd@gmail.com", "Pengirim"=>"Azwan Mohamed", "Kategori"=>"Nasyid"}}
+  [4;36;1mNasyid Create (0.0ms)[0m   [0;1mINSERT INTO "nasyids" ("Lirik", "updated_at", "Artis", "Album", "Sumber", "Judul", "Email", "Pengirim", "Kategori", "created_at") VALUES('Ingat pesan Rasul junjungan 
+Hiaskanlah dirimu
+Dengan sifat-sifat yang mulia
+Ia fitrah semua manusia
+
+c/o 
+
+Sabar redha syukur adalah
+Sifat-sifat yang mulia
+Kasih sayang, memaafkan
+Mestilah menghiasi diri
+
+Lelaki dan wanita, tua atau muda
+Mesti mengamalkan sifat mahmudah
+Jika manusia tidak mengamalkan
+Mereka bukan lagi manusia ', '2009-09-14 04:41:54', 'Akhlak Bunga Diri', 'Aeman', 'http://liriknasyid.com', '', 'azwanmohd@gmail.com', 'Azwan Mohamed', 'Nasyid', '2009-09-14 04:41:54')[0m
+Redirected to http://127.0.0.1:3000/nasyids/2
+Completed in 250ms (DB: 0) | 302 Found [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 12:41:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 12:42:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 79ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2/edit]
+
+
+Processing NasyidsController#update (for 127.0.0.1 at 2009-09-14 12:42:20) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "id"=>"2", "nasyid"=>{"Lirik"=>"Ingat pesan Rasul junjungan \r\nHiaskanlah dirimu\r\nDengan sifat-sifat yang mulia\r\nIa fitrah semua manusia\r\n\r\nc/o \r\n\r\nSabar redha syukur adalah\r\nSifat-sifat yang mulia\r\nKasih sayang, memaafkan\r\nMestilah menghiasi diri\r\n\r\nLelaki dan wanita, tua atau muda\r\nMesti mengamalkan sifat mahmudah\r\nJika manusia tidak mengamalkan\r\nMereka bukan lagi manusia ", "Artis"=>"Aeman", "Sumber"=>"http://liriknasyid.com", "Album"=>"Aeman", "Judul"=>"Akhlak Bunga Diri", "Email"=>"azwanmohd@gmail.com", "Pengirim"=>"Azwan Mohamed", "Kategori"=>"Nasyid"}}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+  [4;36;1mNasyid Update (0.0ms)[0m   [0;1mUPDATE "nasyids" SET "Artis" = 'Aeman', "Judul" = 'Akhlak Bunga Diri', "updated_at" = '2009-09-14 04:42:20' WHERE "id" = 2[0m
+Redirected to http://127.0.0.1:3000/nasyids/2
+Completed in 219ms (DB: 0) | 302 Found [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 12:42:20) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:44:25) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:44:30) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:44:30) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 12:44:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2/edit]
+
+
+Processing NasyidsController#update (for 127.0.0.1 at 2009-09-14 12:45:22) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "id"=>"2", "nasyid"=>{"Lirik"=>"Ingat pesan Rasul junjungan \\n\r\nHiaskanlah dirimu \\n\r\nDengan sifat-sifat yang mulia\r\nIa fitrah semua manusia\r\n\r\nc/o \r\n\r\nSabar redha syukur adalah\r\nSifat-sifat yang mulia\r\nKasih sayang, memaafkan\r\nMestilah menghiasi diri\r\n\r\nLelaki dan wanita, tua atau muda\r\nMesti mengamalkan sifat mahmudah\r\nJika manusia tidak mengamalkan\r\nMereka bukan lagi manusia ", "Artis"=>"Aeman", "Sumber"=>"http://liriknasyid.com", "Album"=>"Aeman", "Judul"=>"Akhlak Bunga Diri", "Email"=>"azwanmohd@gmail.com", "Pengirim"=>"Azwan Mohamed", "Kategori"=>"Nasyid"}}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+  [4;35;1mNasyid Update (0.0ms)[0m   [0mUPDATE "nasyids" SET "Lirik" = 'Ingat pesan Rasul junjungan \n
+Hiaskanlah dirimu \n
+Dengan sifat-sifat yang mulia
+Ia fitrah semua manusia
+
+c/o 
+
+Sabar redha syukur adalah
+Sifat-sifat yang mulia
+Kasih sayang, memaafkan
+Mestilah menghiasi diri
+
+Lelaki dan wanita, tua atau muda
+Mesti mengamalkan sifat mahmudah
+Jika manusia tidak mengamalkan
+Mereka bukan lagi manusia ', "updated_at" = '2009-09-14 04:45:22' WHERE "id" = 2[0m
+Redirected to http://127.0.0.1:3000/nasyids/2
+Completed in 235ms (DB: 0) | 302 Found [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 12:45:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 12:45:28) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2/edit]
+
+
+Processing NasyidsController#update (for 127.0.0.1 at 2009-09-14 12:45:46) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "id"=>"2", "nasyid"=>{"Lirik"=>"Ingat pesan Rasul junjungan<br>\r\nHiaskanlah dirimu <br>\r\nDengan sifat-sifat yang mulia\r\nIa fitrah semua manusia\r\n\r\nc/o \r\n\r\nSabar redha syukur adalah\r\nSifat-sifat yang mulia\r\nKasih sayang, memaafkan\r\nMestilah menghiasi diri\r\n\r\nLelaki dan wanita, tua atau muda\r\nMesti mengamalkan sifat mahmudah\r\nJika manusia tidak mengamalkan\r\nMereka bukan lagi manusia ", "Artis"=>"Aeman", "Sumber"=>"http://liriknasyid.com", "Album"=>"Aeman", "Judul"=>"Akhlak Bunga Diri", "Email"=>"azwanmohd@gmail.com", "Pengirim"=>"Azwan Mohamed", "Kategori"=>"Nasyid"}}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+  [4;35;1mNasyid Update (0.0ms)[0m   [0mUPDATE "nasyids" SET "Lirik" = 'Ingat pesan Rasul junjungan<br>
+Hiaskanlah dirimu <br>
+Dengan sifat-sifat yang mulia
+Ia fitrah semua manusia
+
+c/o 
+
+Sabar redha syukur adalah
+Sifat-sifat yang mulia
+Kasih sayang, memaafkan
+Mestilah menghiasi diri
+
+Lelaki dan wanita, tua atau muda
+Mesti mengamalkan sifat mahmudah
+Jika manusia tidak mengamalkan
+Mereka bukan lagi manusia ', "updated_at" = '2009-09-14 04:45:46' WHERE "id" = 2[0m
+Redirected to http://127.0.0.1:3000/nasyids/2
+Completed in 219ms (DB: 0) | 302 Found [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 12:45:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNasyid Load (16.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 12:45:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2/edit]
+
+
+Processing NasyidsController#update (for 127.0.0.1 at 2009-09-14 12:47:27) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "id"=>"2", "nasyid"=>{"Lirik"=>"Ingat pesan Rasul junjungan\r\nHiaskanlah dirimu\r\nDengan sifat-sifat yang mulia\r\nIa fitrah semua manusia\r\n\r\nc/o \r\n\r\nSabar redha syukur adalah\r\nSifat-sifat yang mulia\r\nKasih sayang, memaafkan\r\nMestilah menghiasi diri\r\n\r\nLelaki dan wanita, tua atau muda\r\nMesti mengamalkan sifat mahmudah\r\nJika manusia tidak mengamalkan\r\nMereka bukan lagi manusia ", "Artis"=>"Aeman", "Sumber"=>"http://liriknasyid.com", "Album"=>"Aeman", "Judul"=>"Akhlak Bunga Diri", "Email"=>"azwanmohd@gmail.com", "Pengirim"=>"Azwan Mohamed", "Kategori"=>"Nasyid"}}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+  [4;35;1mNasyid Update (16.0ms)[0m   [0mUPDATE "nasyids" SET "Lirik" = 'Ingat pesan Rasul junjungan
+Hiaskanlah dirimu
+Dengan sifat-sifat yang mulia
+Ia fitrah semua manusia
+
+c/o 
+
+Sabar redha syukur adalah
+Sifat-sifat yang mulia
+Kasih sayang, memaafkan
+Mestilah menghiasi diri
+
+Lelaki dan wanita, tua atau muda
+Mesti mengamalkan sifat mahmudah
+Jika manusia tidak mengamalkan
+Mereka bukan lagi manusia ', "updated_at" = '2009-09-14 04:47:27' WHERE "id" = 2[0m
+Redirected to http://127.0.0.1:3000/nasyids/2
+Completed in 422ms (DB: 16) | 302 Found [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 12:47:27) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:47:29) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:47:31) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:47:31) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#create (for 127.0.0.1 at 2009-09-14 12:48:22) [POST]
+  Parameters: {"commit"=>"Hantar", "authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "nasyid"=>{"Lirik"=>"Pemuda tulang punggung bangsa\r\nBaik pemuda baik pula bangsanya\r\nAkhlak pemuda akhlaknya bangsa\r\nMudah di kata namun sulit di kerja\r\n\r\nAyo pemuda kita semua\r\nKita junjung tinggi asas bersaudara\r\nSaling melindungi antara kita\r\nPemuda adalah harapan bangsa\r\n\r\nReff:\r\nMari pemuda kita bangkit bersama\r\nTegakkan Islam dalam kehidupan \r\nMari pemuda kita bangun kembali \r\nKehidupan masyarakat yang terpuji\r\n \r\n", "Artis"=>"Af-One Nasyid", "Sumber"=>"http://liriknasyid.com ", "Album"=>"Harapan Ku", "Judul"=>"Pemuda", "Email"=>"azwanmohd@gmail.com", "Pengirim"=>"Azwan Mohamed", "Kategori"=>"Nasyid"}}
+  [4;36;1mNasyid Create (0.0ms)[0m   [0;1mINSERT INTO "nasyids" ("Lirik", "updated_at", "Artis", "Album", "Sumber", "Judul", "Email", "Pengirim", "Kategori", "created_at") VALUES('Pemuda tulang punggung bangsa
+Baik pemuda baik pula bangsanya
+Akhlak pemuda akhlaknya bangsa
+Mudah di kata namun sulit di kerja
+
+Ayo pemuda kita semua
+Kita junjung tinggi asas bersaudara
+Saling melindungi antara kita
+Pemuda adalah harapan bangsa
+
+Reff:
+Mari pemuda kita bangkit bersama
+Tegakkan Islam dalam kehidupan 
+Mari pemuda kita bangun kembali 
+Kehidupan masyarakat yang terpuji
+ 
+', '2009-09-14 04:48:22', 'Af-One Nasyid', 'Harapan Ku', 'http://liriknasyid.com ', 'Pemuda', 'azwanmohd@gmail.com', 'Azwan Mohamed', 'Nasyid', '2009-09-14 04:48:22')[0m
+Redirected to http://127.0.0.1:3000/nasyids/3
+Completed in 328ms (DB: 0) | 302 Found [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 12:48:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 3) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/nasyids/3]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:48:41) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:49:15) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:49:16) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:49:23) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/]
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:50:22) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:50:22) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:50:44) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:51:47) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids/]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:52:36) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids/]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:52:59) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids/]
+
+
+Processing NasyidsController#destroy (for 127.0.0.1 at 2009-09-14 12:53:17) [DELETE]
+  Parameters: {"authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "id"=>"1"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 1) [0m
+  [4;35;1mNasyid Destroy (0.0ms)[0m   [0mDELETE FROM "nasyids" WHERE "id" = 1[0m
+Redirected to http://127.0.0.1:3000/nasyids
+Completed in 156ms (DB: 0) | 302 Found [http://127.0.0.1/nasyids/1]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:53:17) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:54:21) [GET]
+  [4;35;1mNasyid Load (15.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 94ms (View: 63, DB: 15) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:54:56) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 234ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:54:57) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:55:22) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:55:22) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:55:56) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:55:56) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 12:56:07) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 12:56:08) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 12:59:15) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 12:59:15) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 12:59:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 3) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 234ms (View: 203, DB: 0) | 200 OK [http://127.0.0.1/nasyids/3/edit]
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 12:59:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 3) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids/3/edit]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:00:03) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:00:03) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:00:08) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:00:08) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:00:13) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:00:13) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:00:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNasyid Load (15.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 47ms (View: 16, DB: 15) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:00:21) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:00:21) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:00:56) [GET]
+  [4;36;1mNasyid Load (15.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 62ms (View: 31, DB: 15) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:00:56) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:01:00) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:01:01) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:01:11) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:01:14) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:01:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:01:39) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:01:50) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:01:50) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:02:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 3) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/nasyids/3]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:02:25) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:02:27) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 187ms (View: 156, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:02:27) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:03:40) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:03:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:03:45) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:03:55) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:03:55) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:05:19) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:05:19) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:05:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:05:22) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:05:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids/2]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:05:50) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 13:06:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mNasyid Load (15.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 2) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 94ms (View: 63, DB: 15) | 200 OK [http://127.0.0.1/nasyids/2/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:06:51) [GET]
+
+ActionController::RoutingError (No route matches "/nasyids/2/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:06:55) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:06:55) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:06:57) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:06:57) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:07:36) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:07:36) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:07:38) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:07:38) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:07:44) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:07:44) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:08:35) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:08:35) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:08:41) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:08:41) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:11:24) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:11:24) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:11:28) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:11:28) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:11:30) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:11:30) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:11:31) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:11:31) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:11:33) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:11:33) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:13:58) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:13:58) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:14:26) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 203ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:14:26) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:14:44) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:14:44) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:15:15) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:15:15) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:17:43) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:17:43) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#create (for 127.0.0.1 at 2009-09-14 13:19:00) [POST]
+  Parameters: {"commit"=>"Hantar", "authenticity_token"=>"uxPxT4jP1S/jCnjzkSUtwWEPPkp87CygmciaCgMRg+4=", "nasyid"=>{"Lirik"=>"Uuuu... \r\nKenangi Ibu Bapa \r\nDoakanlah Sejahtera \r\nKita Anak Harus Membela \r\nApabila Sudah Dewasa \r\n\r\nJangan Biarkan Mereka \r\nSia-Sia Di Hari Tua \r\nKecewa Hidup Dan Merana \r\nKerna Perbuatan Anak Derhaka \r\n\r\nBahgiakan Mereka \r\nHingga Ke Hujung Usia \r\nBila Sampai Waktu Ajalnya \r\nAnak Soleh Sebagai Harta \r\n\r\nHai... Ibu Bapa \r\nKami Permata Anda \r\nTidak Jemu Berdoa \r\nAgar Sejahtera Terpelihara \r\n\r\nDi Dunia Bahagia \r\nAkhirat Pun Begitu Jua \r\nInilah Harapan Kami Semua \r\nMoga Allah Kabulkan Doa \r\n", "Artis"=>"Rabbani", "Sumber"=>"http://liriknasyid.com", "Album"=>"Masa", "Judul"=>"Anak Soleh", "Email"=>"azwanmohd@gmail.com", "Pengirim"=>"Azwan Mohamed", "Kategori"=>"Nasyid"}}
+  [4;35;1mNasyid Create (16.0ms)[0m   [0mINSERT INTO "nasyids" ("Lirik", "updated_at", "Artis", "Album", "Sumber", "Judul", "Email", "Pengirim", "Kategori", "created_at") VALUES('Uuuu... 
+Kenangi Ibu Bapa 
+Doakanlah Sejahtera 
+Kita Anak Harus Membela 
+Apabila Sudah Dewasa 
+
+Jangan Biarkan Mereka 
+Sia-Sia Di Hari Tua 
+Kecewa Hidup Dan Merana 
+Kerna Perbuatan Anak Derhaka 
+
+Bahgiakan Mereka 
+Hingga Ke Hujung Usia 
+Bila Sampai Waktu Ajalnya 
+Anak Soleh Sebagai Harta 
+
+Hai... Ibu Bapa 
+Kami Permata Anda 
+Tidak Jemu Berdoa 
+Agar Sejahtera Terpelihara 
+
+Di Dunia Bahagia 
+Akhirat Pun Begitu Jua 
+Inilah Harapan Kami Semua 
+Moga Allah Kabulkan Doa 
+', '2009-09-14 05:19:00', 'Rabbani', 'Masa', 'http://liriknasyid.com', 'Anak Soleh', 'azwanmohd@gmail.com', 'Azwan Mohamed', 'Nasyid', '2009-09-14 05:19:00')[0m
+Redirected to http://127.0.0.1:3000/nasyids/4
+Completed in 250ms (DB: 16) | 302 Found [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:19:00) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 4) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://127.0.0.1/nasyids/4]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:19:01) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:19:08) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 94ms (View: 79, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:19:08) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:20:44) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:20:44) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:21:05) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:21:06) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:10) [GET]
+  [4;36;1mNasyid Load (15.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:10) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:14) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:14) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:15) [GET]
+  [4;36;1mNasyid Load (16.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:15) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:16) [GET]
+  [4;35;1mNasyid Load (16.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 15, DB: 16) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:16) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-09-14 13:21:21) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 4) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids/4]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:21:21) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#edit (for 127.0.0.1 at 2009-09-14 13:21:26) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 4) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/edit
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids/4/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:26) [GET]
+
+ActionController::RoutingError (No route matches "/nasyids/4/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:44) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:44) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:47) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:48) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:48) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:48) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:48) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:21:48) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:21:48) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:22:03) [GET]
+  [4;35;1mNasyid Load (16.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 46ms (View: 15, DB: 16) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:22:03) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:22:32) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:22:32) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:22:32) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:22:32) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:22:34) [GET]
+  [4;36;1mNasyid Load (16.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:22:34) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:24:28) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:24:29) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:24:50) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 63ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:24:50) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:32:02) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:32:03) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:32:03) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:32:43) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:32:43) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:33:36) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:35:20) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 93ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:35:20) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:35:32) [GET]
+  [4;35;1mNasyid Load (16.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 344ms (View: 281, DB: 16) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:35:33) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:36:06) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:36:06) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:36:30) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:36:30) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:37:30) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:37:30) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:37:41) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids/]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:37:41) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:38:47) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:38:47) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:38:51) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:38:51) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:39:54) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:39:54) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:40:33) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 110ms (View: 79, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:40:34) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:40:38) [GET]
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:40:38) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-09-14 13:40:58) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-14 13:40:58) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-09-14 13:41:00) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-09-14 13:41:00) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-25 01:29:36) [GET]
+
+ActionController::RoutingError (No route matches "/nasyid" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-08-25 01:29:43) [GET]
+  [4;36;1mNasyid Load (46.0ms)[0m   [0;1mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 2496ms (View: 2434, DB: 46) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-25 01:29:45) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-08-25 01:30:11) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-08-25 01:30:11) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#new (for 127.0.0.1 at 2009-08-25 01:32:35) [GET]
+Rendering template within layouts/nasyids
+Rendering nasyids/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/nasyids/new]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-08-25 01:32:36) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#create (for 127.0.0.1 at 2009-08-25 01:35:13) [POST]
+  Parameters: {"commit"=>"Hantar", "authenticity_token"=>"xDa+E1LCU5uhqd1rbhJjhhRHVXGiCaQ0IdaUU0miUmo=", "nasyid"=>{"Lirik"=>"Setiap insan pastikan merasa\r\nSaat perpisahan terakhir\r\nDunia yang fana akan ditinggalkan\r\nHanya amalan yang akan dibawa //\r\n\r\nTerdengar sayup surah dibaca\r\nSayu alunan suara\r\nCemas di dada lemah tak bermaya\r\nTerbuka hijap di depan mata //\r\n\r\nSelamat tinggal pada semua\r\nBerpisah kita selamanya\r\nKita tak sama nasib di sana\r\nBaiklah atau sebaliknya\r\n\r\nAmalan dan taqwa jadi bekalan\r\nSejahtera, bahagia pulang...kesana //\r\n\r\nSekujur badan berselimut putih\r\nRebah bersemadi sendiri\r\nMengharap kasih anak dan isteri\r\nApa mungkin pahala dikirim //\r\n\r\nTerbaring sempit seluas pusara\r\nSoal bicara terus bermula\r\nSesal dan insaf tak berguna lagi\r\nHancurlah jasad dimamah bumi //\r\n\r\nBerpisah sudah segalanya\r\nYang tinggal hanyalah kanangan\r\nDiiringi doa dan air mata\r\nYang pergi takkan kembali lagi .", "Artis"=>"Rabbani", "Sumber"=>"http://liriknasyid.com", "Album"=>"Munsyid : Rabbani", "Judul"=>"Pergi Tak Kembali", "Email"=>"mdasri.stambul@yahoo.com", "Pengirim"=>"Mohd Asri", "Kategori"=>"Nasyid"}}
+  [4;35;1mNasyid Create (0.0ms)[0m   [0mINSERT INTO "nasyids" ("Lirik", "updated_at", "Artis", "Album", "Sumber", "Judul", "Email", "Pengirim", "Kategori", "created_at") VALUES('Setiap insan pastikan merasa
+Saat perpisahan terakhir
+Dunia yang fana akan ditinggalkan
+Hanya amalan yang akan dibawa //
+
+Terdengar sayup surah dibaca
+Sayu alunan suara
+Cemas di dada lemah tak bermaya
+Terbuka hijap di depan mata //
+
+Selamat tinggal pada semua
+Berpisah kita selamanya
+Kita tak sama nasib di sana
+Baiklah atau sebaliknya
+
+Amalan dan taqwa jadi bekalan
+Sejahtera, bahagia pulang...kesana //
+
+Sekujur badan berselimut putih
+Rebah bersemadi sendiri
+Mengharap kasih anak dan isteri
+Apa mungkin pahala dikirim //
+
+Terbaring sempit seluas pusara
+Soal bicara terus bermula
+Sesal dan insaf tak berguna lagi
+Hancurlah jasad dimamah bumi //
+
+Berpisah sudah segalanya
+Yang tinggal hanyalah kanangan
+Diiringi doa dan air mata
+Yang pergi takkan kembali lagi .', '2009-08-24 17:35:13', 'Rabbani', 'Munsyid : Rabbani', 'http://liriknasyid.com', 'Pergi Tak Kembali', 'mdasri.stambul@yahoo.com', 'Mohd Asri', 'Nasyid', '2009-08-24 17:35:13')[0m
+Redirected to http://127.0.0.1:3000/nasyids/5
+Completed in 15ms (DB: 0) | 302 Found [http://127.0.0.1/nasyids]
+
+
+Processing NasyidsController#show (for 127.0.0.1 at 2009-08-25 01:35:13) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mNasyid Load (0.0ms)[0m   [0;1mSELECT * FROM "nasyids" WHERE ("nasyids"."id" = 5) [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/show
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://127.0.0.1/nasyids/5]
+
+
+Processing NasyidsController#LirikNasyid_com_files to js (for 127.0.0.1 at 2009-08-25 01:35:13) [GET]
+  Parameters: {"id"=>"urchin"}
+
+ActionController::UnknownAction (No action responded to LirikNasyid_com_files. Actions: create, destroy, edit, index, new, show, and update):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing NasyidsController#index (for 127.0.0.1 at 2009-08-25 01:35:50) [GET]
+  [4;35;1mNasyid Load (0.0ms)[0m   [0mSELECT * FROM "nasyids" [0m
+Rendering template within layouts/nasyids
+Rendering nasyids/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://127.0.0.1/nasyids]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-25 01:35:50) [GET]
+
+ActionController::RoutingError (No route matches "/LirikNasyid_com_files/urchin.js" with {:method=>:get}):
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
