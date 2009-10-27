@@ -12,12 +12,12 @@
 ActiveRecord::Schema.define(:version => 20090914041650) do
 
   create_table "nasyids", :force => true do |t|
-    t.string   "Judul"
-    t.string   "Artis"
+    t.string   "Judul" 
+    t.string   "Artis" 
     t.string   "Album"
     t.string   "Pengirim"
     t.string   "Email"
-    t.string   "Sumber"
+    t.url   "Sumber"
     t.string   "Kategori"
     t.text     "Lirik"
     t.datetime "created_at"

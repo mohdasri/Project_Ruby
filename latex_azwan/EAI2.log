@@ -1,0 +1,345 @@
+This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=pdflatex 2009.9.7)  20 OCT 2009 21:07
+entering extended mode
+**EAI2.tex
+(EAI2.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2008-06-18, ngerman-x-2008-06-18, french, loaded.
+(IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+-- Using IEEE Computer Society mode.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 366.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) ("C:\Program Files\MiKTeX 2.7\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 242.
+LaTeX Info: Redefining \nocite on input line 313.
+Package: cite 2009/04/29  v 5.1
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2008/09/08 v0.04l Graphics/color for pdfTeX
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+) (EAI2.aux
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+
+LaTeX Warning: Label `IEEEhowto:kopka' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 351.
+LaTeX Font Info:    ... okay on input line 351.
+ ("C:\Program Files\MiKTeX 2.7\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen119
+\scratchbox=\box27
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen120
+\MPnumerator=\count96
+\everyMPtoPDFconversion=\toks17
+)
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 403.
+
+ ("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\ot1phv.fd"
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 403.
+
+Underfull \hbox (badness 2158) in paragraph at lines 408--409
+[]\OT1/ptm/m/it/10 The im-ple-men-ta-tion of Elec-tronic Gov-ern-ment (EG)
+ []
+
+Missing character: There is no ’ in font ptmr7t!
+<figure1.PNG, id=1, 706.64pt x 523.9575pt>
+File: figure1.PNG Graphic file (type png)
+ <use figure1.PNG>
+Overfull \hbox (3.41644pt too wide) in paragraph at lines 450--451
+[][] 
+ []
+
+[1{C:/Documents and Settings/All Users/Application Data/MiKTeX/2.7/pdftex/confi
+g/pdftex.map}
+
+
+] <figure2.PNG, id=9, 504.88625pt x 282.05376pt>
+File: figure2.PNG Graphic file (type png)
+
+<use figure2.PNG>
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+ <figure3.PNG, id=10, 539.01375pt x 406.51875pt>
+File: figure3.PNG Graphic file (type png)
+
+<use figure3.PNG> [2 <figure1.PNG (PNG copy)> <figure2.PNG (PNG copy)>]
+[3 <figure3.PNG (PNG copy)>]
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+ [4]
+Missing character: There is no ’ in font ptmr7t!
+
+! Misplaced alignment tab character &.
+l.559 ...ancangan dan Kawalan Belanjawan (eSPKB) &
+                                                    Pusat Khidmat Kontraktor...
+
+? 
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+[5]
+! Misplaced alignment tab character &.
+l.737 ...nsive and Capacity to Serve, Abd. Karim &
+                                                   Abd. Khalid
+? 
+Missing character: There is no – in font ptmr7t!
+! Misplaced alignment tab character &.
+l.743 ...an, S.A., Maniam, K., Abdul Jalil, M.A. &
+                                                   Ahmad, N. (2006).  An  Ev...
+
+? 
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
+[]\OT1/ptm/m/n/9 http://vinodkr.blogspot.com/2007/06/enterprise-systems-
+ []
+
+Missing character: There is no ö in font ptmr7t!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 782.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 782.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 782.
+
+Underfull \hbox (badness 10000) in paragraph at lines 782--783
+\OT1/ptm/m/n/9 Primer. $http : / / www . intersystems . com / ensemble / techno
+logy /
+ []
+
+Missing character: There is no “ in font ptmr7t!
+Missing character: There is no ” in font ptmr7t!
+Missing character: There is no – in font ptmr7t!
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[6] (EAI2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1795 strings out of 95304
+ 26452 string characters out of 1183033
+ 82111 words of memory out of 1500000
+ 5028 multiletter control sequences out of 110000
+ 35378 words of font info for 69 fonts, out of 3000000 for 5000
+ 17 hyphenation exceptions out of 8191
+ 26i,8n,21p,1410b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.7/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.7/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.7/font
+s/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on EAI2.pdf (6 pages, 232916 bytes).
+PDF statistics:
+ 37 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+

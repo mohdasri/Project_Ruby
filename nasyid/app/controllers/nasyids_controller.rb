@@ -1,6 +1,11 @@
 class NasyidsController < ApplicationController
   # GET /nasyids
   # GET /nasyids.xml
+  
+  def find
+	@nasyids = Nasyid.find(:all,:conditions=>["Artis = ? OR Album = ?",params[:search_string], params[:search_string]])
+	@nasyids = Nasyid.find(:all,:conditions=>["Judul = ? OR Pengirim = ?",params[:search_string], params[:search_string]])
+end
   def index
     @nasyids = Nasyid.all
 
@@ -44,7 +49,7 @@ class NasyidsController < ApplicationController
 
     respond_to do |format|
       if @nasyid.save
-        flash[:notice] = 'Nasyid was successfully created.'
+        flash[:notice] = 'Nasyid telah berjaya dikemaskini.'
         format.html { redirect_to(@nasyid) }
         format.xml  { render :xml => @nasyid, :status => :created, :location => @nasyid }
       else
@@ -61,7 +66,7 @@ class NasyidsController < ApplicationController
 
     respond_to do |format|
       if @nasyid.update_attributes(params[:nasyid])
-        flash[:notice] = 'Nasyid was successfully updated.'
+        flash[:notice] = 'Nasyid telah berjaya dikemaskini.'
         format.html { redirect_to(@nasyid) }
         format.xml  { head :ok }
       else

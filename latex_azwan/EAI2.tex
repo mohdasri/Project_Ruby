@@ -1,0 +1,798 @@
+
+%% bare_conf.tex
+%% V1.3
+%% 2007/01/11
+%% by Michael Shell
+%% See:
+%% http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.7 or later) with an IEEE conference paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+%%*************************************************************************
+%% Legal Notice:
+%% This code is offered as-is without any warranty either expressed or
+%% implied; without even the implied warranty of MERCHANTABILITY or
+%% FITNESS FOR A PARTICULAR PURPOSE! 
+%% User assumes all risk.
+%% In no event shall IEEE or any contributor to this code be liable for
+%% any damages or losses, including, but not limited to, incidental,
+%% consequential, or any other damages, resulting from the use or misuse
+%% of any information contained here.
+%%
+%% All comments are the opinions of their respective authors and are not
+%% necessarily endorsed by the IEEE.
+%%
+%% This work is distributed under the LaTeX Project Public License (LPPL)
+%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
+%% distributed and modified. A copy of the LPPL, version 1.3, is included
+%% in the base LaTeX documentation of all distributions of LaTeX released
+%% 2003/12/01 or later.
+%% Retain all contribution notices and credits.
+%% ** Modified files should be clearly indicated as such, including  **
+%% ** renaming them and changing author support contact information. **
+%%
+%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
+%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
+%%*************************************************************************
+
+% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
+% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
+% *** with production work. IEEE's font choices can trigger bugs that do  ***
+% *** not appear when using other class files.                            ***
+% The testflow support page is at:
+% http://www.michaelshell.org/tex/testflow/
+
+
+
+% Note that the a4paper option is mainly intended so that authors in
+% countries using A4 can easily print to A4 and see how their papers will
+% look in print - the typesetting of the document will not typically be
+% affected with changes in paper size (but the bottom and side margins will).
+% Use the testflow package mentioned above to verify correct handling of
+% both paper sizes by the user's LaTeX system.
+%
+% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
+% should be used if it is desired that the figures are to be displayed in
+% draft mode.
+%
+\documentclass[conference, compsoc]{IEEEtran}
+% Add the compsoc option for Computer Society conferences.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[conference]{../sty/IEEEtran}
+
+
+
+
+
+% Some very useful LaTeX packages include:
+% (uncomment the ones you want to load)
+
+
+% *** MISC UTILITY PACKAGES ***
+%
+%\usepackage{ifpdf}
+% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
+% compilation based on whether the output is pdf or dvi.
+% usage:
+% \ifpdf
+%   % pdf code
+% \else
+%   % dvi code
+% \fi
+% The latest version of ifpdf.sty can be obtained from:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
+% Also, note that IEEEtran.cls V1.7 and later provides a builtin
+% \ifCLASSINFOpdf conditional that works the same way.
+% When switching from latex to pdflatex and vice-versa, the compiler may
+% have to be run twice to clear warning/error messages.
+
+
+
+
+
+
+% *** CITATION PACKAGES ***
+%
+\usepackage{cite}
+% cite.sty was written by Donald Arseneau
+% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
+% \cite{} output to follow that of IEEE. Loading the cite package will
+% result in citation numbers being automatically sorted and properly
+% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
+% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
+% \cite will automatically add leading space, if needed. Use cite.sty's
+% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
+% cite.sty is already installed on most LaTeX systems. Be sure and use
+% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
+% not currently provide for hyperlinked citations.
+% The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
+% The documentation is contained in the cite.sty file itself.
+
+
+
+
+
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+   \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at: 
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+%\usepackage[cmex10]{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics. If using
+% it, be sure to load this package with the cmex10 option to ensure that
+% only type 1 fonts will utilized at all point sizes. Without this option,
+% it is possible that some math symbols, particularly those within
+% footnotes, will be rendered in bitmap form which will result in a
+% document that can not be IEEE Xplore compliant!
+%
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
+% There is also a support site at:
+% http://algorithms.berlios.de/index.html
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
+
+
+
+
+% *** ALIGNMENT PACKAGES ***
+%
+%\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+
+
+%\usepackage{mdwmath}
+%\usepackage{mdwtab}
+% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
+% especially mdwmath.sty and mdwtab.sty which are used to format equations
+% and tables, respectively. The MDWtools set is already installed on most
+% LaTeX systems. The lastest version and documentation is available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
+
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+%\usepackage{eqparbox}
+% Also of notable interest is Scott Pakin's eqparbox package for creating
+% (automatically sized) equal width boxes - aka "natural width parboxes".
+% Available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
+
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\usepackage[tight,footnotesize]{subfigure}
+% subfigure.sty was written by Steven Douglas Cochran. This package makes it
+% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
+% work, it is a good idea to load it with the tight package option to reduce
+% the amount of white space around the subfigures. subfigure.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
+% subfigure.sty has been superceeded by subfig.sty.
+
+
+
+%\usepackage[caption=false]{caption}
+%\usepackage[font=footnotesize]{subfig}
+% subfig.sty, also written by Steven Douglas Cochran, is the modern
+% replacement for subfigure.sty. However, subfig.sty requires and
+% automatically loads Axel Sommerfeldt's caption.sty which will override
+% IEEEtran.cls handling of captions and this will result in nonIEEE style
+% figure/table captions. To prevent this problem, be sure and preload
+% caption.sty with its "caption=false" package option. This is will preserve
+% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later 
+% (recommended due to many improvements over 1.2) of subfig.sty supports
+% the caption=false option directly:
+%\usepackage[caption=false,font=footnotesize]{subfig}
+%
+% The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
+% The latest version and documentation of caption.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure. The latest version and documentation can be found at:
+% http://www.ctan.org/tex-archive/macros/latex/base/
+
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
+% Documentation is contained in the stfloats.sty comments as well as in the
+% presfull.pdf file. Do not use the stfloats baselinefloat ability as IEEE
+% does not allow \baselineskip to stretch. Authors submitting work to the
+% IEEE should note that IEEE rarely uses double column equations and
+% that authors should try to avoid such use. Do not be tempted to use the
+% cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
+% not format its papers in such ways.
+
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
+% Read the url.sty source comments for usage information. Basically,
+% \url{my_url_here}.
+
+
+
+
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Enterprise Application Integration (EAI) in Malaysian Electronic Government (EG) Applications } 
+
+
+% author names and affiliations
+% use a multiple column layout for up to two different
+% affiliations
+
+\author{\IEEEauthorblockN{Azwan Bin Mohamed (P47882)}
+\IEEEauthorblockA{Department of System Science and Management\\
+Universiti Kebangsaan Malaysia\\
+Bangi, Selangor Darul Ehsan\\
+azwanmohd@gmail.com\\
+(Final Report)}
+}
+
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+% 
+%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+%Homer Simpson\IEEEauthorrefmark{2},
+%James Kirk\IEEEauthorrefmark{3}, 
+%Montgomery Scott\IEEEauthorrefmark{3} and
+%Eldon Tyrell\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+
+\begin{abstract}
+%\boldmath
+The implementation of Electronic Government (EG) started since the initiation of Multimedia Super Corridor (MSC) by Malaysian Government. There are seven pilot projects under the EG Application Initiative i.e. Human Resource Management Information System (HRMIS), Project Monitoring System (PMS), Electronic Procurement (EP), Electronic Labour Exchange (ELX), Licensing and Related  Vehicle Services and Utility Payment (EDS), Electronic Syariah (e-Syariah) and Generic Office Environment (GOE) which each of the system is handed over to respective department to be managed. Most of the systems are currently being implemented with some modification or enhancement to certain aspect to cope with any changes in current policies and procedures. However, the effectiveness of the implementation of EG Application is widely discussed among IT people in Malaysia as well as foreign countries. One of the most mouthful aspect is the integration and interoperability among EG Application. The purpose of this paper is to discuss the concept of Enterprise Application Integration (EAI) in realizing the unity of these systems. The discussion includes, the definition and concept of integration, benefits, implementation status of EG Application. The next section of this paper will provide some examples of the success story in implementing EAI among EG Application in the context of Malaysian Government.
+
+\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the conference you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals/conferences frown on
+% math in the abstract anyway.
+
+% no keywords
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+% no \IEEEPARstart
+Malaysian Government today has to cope with rapidly changing customer demands and innovation in providing services as well as information technology. Previously, many services provided by different government agencies can only be done manually in sequence. However, with the implementation of many EG Application, now, the public can have their service with only a single click. That means public can now for example renew license, pay quit rent and so on through single window interface only. Former Chief Secretary to Malaysian Government, Tan Sri Samsudin Osman in his note to a book called [1] has addressed the following:
+
+\begin{quote}
+\textit{"E-Government offers a collaborative and integrated environment not just for enhanced internal operations but more significantly for a heightened level of government services through a variety of electronic delivery channels thereby providing convenience to citizens and business".}
+\end{quote}
+
+E-Government simply can be defined as the use of ICT in government’s day-to-day business in particular giving services to public. [2] says that e-Government refers to the use of technology in government institutions and operations to enhance access to and delivery of public services. The common focus is on the application  of  ICT  to  improve  the  internal  management  of  the government, to offer more flexible and convenient services  to  the public and to a limited extent, to enhance public participation and democracy as mentioned by [3]. In Malaysia, the implementation of E-Government was initiated in conjunction to introduction of the Multimedia Super Corridor (MSC) in 1996 which is coined by former Prime Minister of Malaysia, Tun Dr. Mahathir Mohamad.
+
+E-government is one of the seven flagship applications introduced in MSC. The objectives of these flagship applications are: to jump start and accelerate the growth of MSC; to enhance national competitiveness; to creation of high value jobs and export growth; to help reduce digital divide; and to make MSC a regional hub and test bed. Under the e-government flagship, seven main projects were identified to be the core of the e-government applications.  The e-government projects are Generic Office Environment (GOE), Electronic Procurement (eP), Human Resource Management Information System (HRMIS), Project Monitoring System (PMS), Electronic Services Delivery (eServices), Electronic Labor Exchange (ELX), and E-Syariah. 
+
+\begin{figure}
+%\begin{center}
+\setlength{\unitlength}{0.0035in}
+\includegraphics[scale=0.35]{figure1.PNG} 
+\end{figure}
+
+The vision of e-Government is a vision for people in government, business and citizens working together for the benefit of Malaysia and all of its citizens [4].  The  vision  calls  for  reinventing government  using  multimedia  and  IT  to  improve  productivity. There are eight projects launched to date under the e-Government Flagship since it was started in 1997. All  these projects will use ICT  and  multimedia  technologies  to  transform  the  way  the government  operates,  coordination  and  enforcement. 
+Since, all applications under the E-Government are anchored by different ministries and departments, therefore there are possibilities and gaps occurred especially in interoperability issues. Furthermore, during the initial stage of development of E-Government applications there was no standard to be followed until the introduction of National Data Dictionary (NDD) by Malaysian Administrative Modernization and Management Planning Unit (MAMPU) in 2002 [5]. 
+
+As the time moves on, the interoperability issue has shown up as a principle in the conception and deployment of the e-government initiatives, and the interoperability frameworks have been the tool for implementing the principle. One of the key technologies used in overcome this gap is through Enterprise Application Integration (EAI). According to [6], interoperability between computing components may be generally defined as the ability to exchange information and mutually to use the information which has been exchanged. An interoperability framework aims at referencing the basic technical specifications that all agencies relevant to the e-government strategy implementation should adopt. This interoperability framework should enable, at least, the interoperability between information systems from different agencies in order to provide services to citizens and businesses in an integrated way [7].
+
+
+\section{System Integration Architecture (SIA)}
+\subsection{Definition of SIA}
+[8] has defined System Integration Architecture (SIA) as the holistic view of the enterprise processes, information and information technology assets, as a vehicle for aligning business and IT in a structured, more efficient and sustainable manner. He also added that SIA is important in etermining factor for business survival and success, enabling managed innovation within the Enterprise and providing a plan for managing your IT Investments.
+
+\subsection{Types of System Integration Architecture}
+The most common types of SIA are as follows:
+
+\subsubsection{Point to Point Integration}
+According to [9], in order to get two independent systems to communicate with each other connectors have to be built which can translate data structures from one system to another. In a point-to-point architecture, integrating systems requires integration code for each interface. When any changes happen in either application A or B, the interface programs must be updated and changed (see figure 2). Further, application integration becomes increasingly difficult as new applications are added to the environment. For every new system added, it is necessary for it to create connection point interfaces with each existing system that it is connected with. As a result the integration solution grows in complexity and becomes hard to manage in the long run.
+
+\begin{figure}[hbt]
+%\begin{center}
+\setlength{\unitlength}{0.0085in}
+\begin{picture}(0,280)(0,0)
+
+\includegraphics[scale=0.5]{figure2.PNG} 
+\end{picture}
+
+\end{figure}
+
+\subsubsection{Enterprise Application Integration (EAI)}
+Enterprises try to share data and processes without making comprehensive changes to the applications or data structures and also decrease the number of interface points. This is made possible by EAI architecture as suggested by [10].
+
+In addition to the above explanation, [11] mentioned that the EAI architecture uses a central system (middleware) called a “hub”, as it sits in the centre. In this method, instead of the requestor application communicating with the respondent, the requestor communicates with the hub application, which in turn communicates with the respondent application (see figure 3).
+
+
+\begin{figure}
+%\begin{center}
+\setlength{\unitlength}{0.0035in}
+\includegraphics[scale=0.45]{figure3.PNG} 
+\end{figure}
+
+
+\subsubsection{Middleware}
+In integration context, [12] had defined that 'Middleware' is basically any type of software that facilitates communications between two or more software systems. This is accomplished by providing common interfaces, which in turn enables all integrated applications to pass messages to each other. These are mostly used for moving information between applications and databases. An example of such middleware is a message broker.
+
+
+\section{Enterprise Application Integration (EAI) in EG Application}
+\subsection{Definition of EAI}
+Enterprise Application Integration (EAI) is an integration framework composed of a collection of technologies and services which form a middleware to enable integration of systems and applications across the enterprise. In the simplest sentence, the term may be referred to the use of any tool to glue together more than one systems that resided in same of different geographical area. Wisegeek.com had defined EAI as a process that brings together enterprise computer applications under a common programming umbrella [13]. 
+
+On the other hand, Enterprise application integration (EAI) is the process of linking such applications within a single organization together in order to simplify and automate business processes to the greatest extent possible, while at the same time avoiding having to make sweeping changes to the existing applications or data structures. In the words of the Gartner Group, EAI is the "unrestricted sharing of data and business processes among any connected application or data sources in the enterprise [14]".
+
+\subsection{Types of Integration Models}
+According to [15], Integration Models can be defined as how applications will be integrated by defining the nature of and mechanisms for integration. The authors added that Integration Models that represents the state-of-the-art to integrating software are:
+
+\subsubsection{Presentation Integration}
+A presentation integration model allows the integration of new software through the existing presentations of the legacy software. This is typically used to create a new user interface but may be used to integrate with other applications.
+
+\subsubsection{Data Integration}
+A data integration model allows the integration of software through access to the data that is created, managed, and stored by the software typically for the purposes of reusing or synchronizing data across applications.
+
+\subsubsection{Functional Integration}
+A functional integration model allows the integration of software for the purpose of invoking existing functionality from other new or existing applications. The integration is done through interfaces to the software.
+
+\subsection{Benefits of EAI}
+There are several benefits of using integration solutions to organizations. The most important benefits being increased profitability, decrease in costs and increased efficiency. Integration solutions facilitate the use of data and functionality embodied in the organizations existing applications or legacy systems instead of replacing them with new systems. They also bring about benefits in the long run as well, for example organizations can gain an instant, real-time view of all their data and operations, which can lead to better decision-making. They also provide the flexibility to quickly adapt business processes to accommodate growth and meet new business challenges as they arise [16]. 
+
+[17] present some of the areas of organizations which can be affected and the effects that can be brought about through system integration. They are as follows: 
+
+\begin{list}{-}{}
+\item Enterprise Reengineering / Process Improvement (establishing the business-process map, simplifying and re-organising some  processes, optimising use of resources,  simulating enterprise behaviour).
+\item Workflow design and management (automate critical processes) 
+\item Improve enterprise performances (mostly in terms of costs and delays but also quality, reactivity and responsiveness) 
+\item Management decision support (simulating of planned situations, forecasting etcetera) 
+\item Enterprise integration (seamless exchange across the systems to provide the right information at the right place at the right time). 
+\end{list}
+
+
+\section{The Electronic Government (EG) Application in Malaysia}
+[18] have collected the following information regarding EG Applications in Malaysia:
+
+\subsection{Generic Office Environment (GOE)}
+The aim of Generic Office Environment (GOE) is to introduce a fully integrated, distributed and scalable office environment that leverages use of multimedia information technology (Yusoff, 2002).  This will enable efficient communication, allowing collaboration across all workers, and ensuring right information reaching the right people in a timely manner. 
+
+The GOE project consists of modules namely Enterprise-wide Information Management System (EIMS), Enterprise-wide Communication Management System and Enterprise-Wide Collaboration Management System (“Pilot Projects”, n.d.). The EIMS provides a universal interface for users to manage, find, retrieve and compose the information that they need in their day-to-day operations. Via the Communication and Collaboration Management Systems, users can communicate and collaborate in a group to perform work functions. All three modules work together in an integrated fashion to provide the technical transparency for the users.
+
+Three phases under GOE project are Pilot Phase, Operational Review Phase and Rollout Phase.  In the Pilot Phase, the system will be developed and implemented in the Prime Minister’s Office, Deputy Prime Minister’s Office, and Chief Secretary to the Government’s Office, Cabinet Division and Malaysian Administrative Modernisation and Management Planning Unit (MAMPU).  Under the Operational Review Phase, the performance of the vendors will be reviewed and for extension to all other agencies.  As of now, the GOE project is undergoing the third phase (Roll-Out Phase) where the system has been roll-out to other government agencies with focus on ministries moving to Putrajaya.
+
+\subsection{Electronic Procurement (eP) Project}
+As for the Electronic Procurement (eP) project, the aim is to re-engineer, automate, and transform current procurement system (Yusoff, 2002).  The project would cover central contract, tender, and direct purchase.
+
+Besides that, the use of eP will increase transparency, saves time and money while encourage suppliers to go electronic and join the K-Economy. The electronic procurement project has taken off with the introduction of ePerolehan and can be accessed at www.eperolehan.com.my. It is the government’s initiative to take its procurement exercises online (Alex,n.d.). With ePerolehan, all suppliers can obtain tender documents and submit bids on the Internet. The suppliers are equipped with smartcards that enable them to transact with the ePerolehan system.  Two modules in ePerolehan system are central contract and direct purchase, and have been fully functional and used by the government in its procurement exercise.
+
+With the introduction of ePerolehan system, it hopes that the system could streamline the processes and procedures as well as improve efficiency and productivity, while lowering the government’s operational cost overtime. For the suppliers, it could translate into new markets, additional revenues and higher margins. Besides that, ePerolehan allows suppliers to present their products on the Internet, receive, manage and process purchase orders and eventually receive payment from government agencies via the Internet. 
+
+This project started in year 1999 and as of 2006, total active registered suppliers is 92,106 where 26,054 enabled suppliers. The Direct Purchase (DP) Catalogue increased by 33.4 percent and enabled suppliers increased by 193 percent since July 2004 (“Flagship Applications Progress Status”, 2006).
+
+\subsection{Human Resource Management Information System (HRMIS)}
+The introduction of Human Resource Management Information System (HRMIS) as an e-government project will provide single interface for government employees to perform human resource functions effectively and efficiently (Yusoff, 2002).  Furthermore, it will help to standardize all human resource processes for federal, state, statutory body, and local authority services.  
+
+The objective of HRMIS is not just for record keeping but also provide transactional functions such as leave application, loan processing, competency management, recruitment, and selection of employee.
+
+The HRMIS project will provide a single interface for government employees to perform human resource management functions effectively and efficiently in an integrated environment. The HRMIS project is anchored by the Public Service Department (PSD).  The project started in 1999 and will take 42 months to be completed (“Status Kemajuan”, n.d.). However, due to much time consumed on the Business Improvement Process (BIP), the application development of HRMIS system was delayed. As such, a Supplementary Agreement is signed by Government and the application development consortium in January 2001.
+
+\subsection{Project Monitoring System (PMS)}
+Project Monitoring System (PMS) as one of the e-government projects will create a mechanism to monitor project implementation throughout various government agencies and statutory bodies (Yusoff, 2002).  PMS would also provide a platform to exchange ideas and to demonstrate best practices in information management and communication services. The PMS is designed to provide a mechanism for monitoring the implementation of government projects (“Pilot Projects”, n.d.). The service also provides a platform for exchanging ideas and demonstrating best practices models in information management and communication services.
+
+The overall scope of PMS covers three services: namely, Application Services, Data Services and Communication Services. Types of projects to be monitored are the e-government projects, five-year development plan projects and any special project.  The first phase of implementation was in 1998.  In the first rollout, PMS was to monitor some of Malaysia’s Seventh Development Plan projects.
+
+Project Implementation has been completed at federal agencies throughout the country. Post implementation activities are ongoing such as the assessment of additional Project Monitoring System (PMS) II capabilities: Elektronik Sistem Perancangan dan Kawalan Belanjawan (eSPKB) &  Pusat Khidmat Kontraktor (PKK) Interface (“Flagship Applications Progress Status”, 2006).
+
+\subsection{Electronic Services Directory (eServices)}
+The next e-government project is Electronic Services Delivery (eServices) (Yusoff, 2002).  This project is a pilot project that allows citizens of Malaysia to engage in transactions with government and utilities payments such as telephone and electricity bill, police summons, Road and Transport Department (RTD) services, etc. The eServices is accessed via multi channel service delivery such as the Internet and kiosk machines.
+
+There are three phases of deliverables for the eServices project (“Status Kemajuan”, n.d.). The first phase includes driver licensing and summons services, and  Tenaga Nasional Berhad (TNB) and Telekom Malaysia (TM) utility bill payment services. The first phase rollout is focused in the Klang Valley and this is followed by Proof-of-Concept for duration of 3 months.  In the second phase, the contractor is granted with the opportunity to extend the rollout of driver licensing, summons services, and utility bill payment nation-wide. Subsequently, the development of vehicle registration and licensing, and Ministry of Health information services are carried out in the Klang Valley. The first phase and second phases have successfully completed. The third phase is currently in progress where the scope of vehicle registration and MOH information services Proof-of-Concept is being taken care of.
+
+There are several websites and kiosks that have offered eServices application.  For example,  Rilek services allows members of the public to access general information and information on their outstanding summons through specially built touch screen infokiosks or through the www.rilek.com.my website (“Easier Payments”, 2003). These website and kiosks allow the public to make online payments to the Road Transport Department (RTD) or the Police by credit card. Other than that, the public can also enquire about and pay their TNB and TM utility bills online via the Rilek service.  The government also allows the public to take their driving theory tests at approved Rilek centre.
+
+\subsection{Electronic Labor Exchange (ELX)}
+The main objective of the Electronic Labor Exchange (ELX) is to improve the mobilization of human resources and optimise work force utilisation through systematic matching of job seekers to job vacancies (Yusoff, 2002). As such, this would enable the Ministry of Human Resources (MOHR) to be a one-stop centre for labour market information that will be accessible to the public.
+
+The ELX project initially started in November 2000 and was expected to complete in fourteen months (“Status Kemajuan”, n.d.).  Until February 2005, about 11,086 job seekers and 466 employers were registered. Of a total vacancies posted, 3,447 resulted in 21,320 jobs matched. This project is fully rolled out for  Kementerian Sumber Manusia and all state district offices of Manpower and Labour Department at 105 sites (“Flagship Applications Progress Status”, 2006).
+
+\subsection{E-Syariah}
+The main objective of implementing E-Syariah is to improve the quality of service in Syariah courts (“E-syariah”, n.d.). This will eventually enhance the Islamic Affairs Department’s effectiveness through better monitoring and co-ordination of its agencies and improving the management of its 102 Syariah courts. The E-Syariah application consists of Syariah Court Case Management System, Office Automation System, E-Syariah Portal, Syarie Lawyers Registration System and Library Management System.
+
+The E-Syariah project launched in April 2002 and expected to be fully operational in 2005 (“Money Game”, 2003). Via the system, the Syariah judges are able to get access to past cases and have all the information they need for a particular case quicker than before.
+
+The overall E-syariah project is completed and the E-Syariah Portal was launched on 31st March 2005. The User Training and System Performance Acceptance Test/Final Acceptance Test (PAT/FAT) activities for Syariah Court Case Management System (SPKMS) have been completed and the system is fully implemented at all fourteen states where it covers 110 courts (“Flagship Applications Progress Status”, 2006).
+
+
+\section{Success Story of EAI in EG Application}
+There are many integration facilities that being used in integrating various applications in government agencies both EG and non-EG applications. Two of them which considered a success are:
+\begin{list}{-}{}
+\item Integration Between HRMIS and eSPKB
+\item Integration Between HRMIS and SIREN
+\end{list}
+
+\subsection{Integration Between HRMIS and eSPKB}
+\subsubsection{Background}
+HRMIS or Human Resource Management Information System is one of the EG Application that is anchored by Public Service Department (PSD) which is totally a human resource based application. For any purposes other than HR functions, HRMIS need to be integrated to outside application such as Sistem Perancangan Kawalan Belanjawan Elektronik (eSPKB).
+
+\subsubsection{Objectives}
+The objectives of developing the integration between HRMIS - eSPKB are:
+
+\begin{list}{-}{}
+\item To complete the human resource (HR) process cycle which cannot be fully implemented in HRMIS
+\item To help in reducing time taken in process works for example in claim management from 14 days in normal process to only 7 days
+\item To promote paper-less environment which lead to minimization of government's expenditure in office equipment.
+\end{list}
+
+
+\subsection{Integration Between HRMIS and SIREN}
+\subsubsection{Background}
+HRMIS or Human Resource Management Information System is one of the EG Application that is anchored by Public Service Department (PSD)
+\subsubsection{Objectives}
+The objectives of developing the integration between HRMIS - SIREN are:
+
+\begin{list}{-}{}
+\item To complete the human resource (HR) process cycle which cannot be fully implemented in HRMIS
+\item To verify all Identity Card (IC) key-in in HRMIS
+\item To import personal record of government's staff to speed up the process of inserting personal record to database
+
+\end{list}
+
+% An example of a floating figure using the graphicx package.
+% Note that \label must occur AFTER (or within) \caption.
+% For figures, \caption should occur after the \includegraphics.
+% Note that IEEEtran v1.7 and later has special internal code that
+% is designed to preserve the operation of \label within \caption
+% even when the captionsoff option is in effect. However, because
+% of issues like this, it may be the safest practice to put all your
+% \label just after \caption rather than within \caption{}.
+%
+% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
+% option should be used if it is desired that the figures are to be
+% displayed while in draft mode.
+%
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=2.5in]{myfigure}
+% where an .eps filename suffix will be assumed under latex, 
+% and a .pdf suffix will be assumed for pdflatex; or what has been declared
+% via \DeclareGraphicsExtensions.
+%\caption{Simulation Results}
+%\label{fig_sim}
+%\end{figure}
+
+% Note that IEEE typically puts floats only at the top, even when this
+% results in a large percentage of a column being occupied by floats.
+
+
+% An example of a double column floating figure using two subfigures.
+% (The subfig.sty package must be loaded for this to work.)
+% The subfigure \label commands are set within each subfloat command, the
+% \label for the overall figure must come after \caption.
+% \hfil must be used as a separator to get equal spacing.
+% The subfigure.sty package works much the same way, except \subfigure is
+% used instead of \subfloat.
+%
+%\begin{figure*}[!t]
+%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
+%\label{fig_first_case}}
+%\hfil
+%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
+%\label{fig_second_case}}}
+%\caption{Simulation results}
+%\label{fig_sim}
+%\end{figure*}
+%
+% Note that often IEEE papers with subfigures do not employ subfigure
+% captions (using the optional argument to \subfloat), but instead will
+% reference/describe all of them (a), (b), etc., within the main caption.
+
+
+% An example of a floating table. Note that, for IEEE style tables, the 
+% \caption command should come BEFORE the table. Table text will default to
+% \footnotesize as IEEE normally uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+%\begin{table}[!t]
+%% increase table row spacing, adjust to taste
+%\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+% \extrarowheight as needed to properly center the text within the cells
+%\caption{An Example of a Table}
+%\label{table_example}
+%\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+%\begin{tabular}{|c||c|}
+%\hline
+%One & Two\\
+%\hline
+%Three & Four\\
+%\hline
+%\end{tabular}
+%\end{table}
+
+
+% Note that IEEE does not put floats in the very first column - or typically
+% anywhere on the first page for that matter. Also, in-text middle ("here")
+% positioning is not used. Most IEEE journals/conferences use top floats
+% exclusively. Note that, LaTeX2e, unlike IEEE journals/conferences, places
+% footnotes above bottom floats. This can be corrected via the \fnbelowfloat
+% command of the stfloats package.
+
+
+
+\section{Conclusion}
+It is important that any organization should pay attention to integration aspect in order to make full use of enterprise application especially any systems which is isolated to the outside organization. 
+
+% conference papers do not normally have an appendix
+
+
+% use section* for acknowledgement
+\section*{Acknowledgment}
+
+
+I would like to express my gratitutes to Mr. Mohd Zamri Murah for the knowledge that he shares with as well as all classmates whose involved in writing this paper directly or indirectly.
+
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+
+\begin{thebibliography}{1}
+\bibitem{IEEEhowto:kopka}
+E-Government in Malaysia: Improving Responsive and Capacity to Serve, Abd. Karim & Abd. Khalid
+
+\bibitem{IEEEhowto:kopka}
+Noore Alam Siddiquee (2008). E-Government and Innovations in Service Delivery: The Malaysian Experience. Intl Journal of Public Administration, 31: 797–815, 2008
+
+\bibitem{IEEEhowto:kopka}
+Hazman, S.A., Maniam, K., Abdul Jalil, M.A. & Ahmad, N. (2006).  An  Evaluative  Survey  of  E  Government  in Malaysia.  In  the  proceedings  of    EGov  Asia  Conference, 26th-28th April, Bangkok, Thailand.
+
+\bibitem{IEEEhowto:kopka}
+Othman,  Y.  (1997),  “MSC  and  the  Vision  of  E-government,” In proceedings of the National Symposium on Electronic Government, Kuala Lumpur, December 8, 1997.
+
+\bibitem{IEEEhowto:kopka}
+Pekeliling AM Bil. 2 Tahun 2002: PENGGUNAAN DAN PEMAKAIAN DATA DICTIONARY SEKTOR AWAM (DDSA) SEBAGAI STANDARD DI AGENSI-AGENSI KERAJAAN
+
+\bibitem{IEEEhowto:kopka}
+CEC, Commission of the European Communities. (1991). Council Directive 91/250/EEC of 14 May 1991 on the legal protection of computer programs
+
+\bibitem{IEEEhowto:kopka}
+Luis Guijarro (2007). Interoperability frameworks and enterprise architectures in e-government initiatives in Europe and the United States. Government Information Quarterly 24 (2007) 89–101
+
+\bibitem{IEEEhowto:kopka}
+http://vinodkr.blogspot.com/2007/06/enterprise-systems-integration.html
+
+\bibitem{IEEEhowto:kopka}
+Travis Brian and Ozkan Mae (2002). Web Services Implementation Guides. Architag Press.
+
+\bibitem{IEEEhowto:kopka}
+Ramanika Abeysekera (2005), Effects of system integration in an organization. Linköpings universitet
+
+\bibitem{IEEEhowto:kopka}
+Travis Brian and Ozkan Mae (2002). Web Services Implementation Guides. Architag Press.
+
+\bibitem{IEEEhowto:kopka}
+Linthicum, David S. (2000). Enterprise Application Integration.  Addison-Wesley.
+
+\bibitem{IEEEhowto:kopka}
+http://www.wisegeek.com/what-is-eai.htm
+
+\bibitem{IEEEhowto:kopka}
+Gable, Julie (March/April 2002). "Enterprise application integration". Information Management Journal. Retrieved 2008-01-22.
+
+\bibitem{IEEEhowto:kopka}
+Ruh, W.A. and Maginnis, F.X. and Brown, W.J, Enterprise Application Integration: A Wiley Tech Brief, 2001
+
+\bibitem{IEEEhowto:kopka}
+InterSystems Corporation (2004).  Integration Technology Primer. \url {http://www.intersystems.com/ensemble/technology/eai_primer/eai_primer.pdf}
+
+\bibitem{IEEEhowto:kopka}
+Kosanke, Kurt, Jochem, Roland, Nell, James G, Bas, Ortiz Angel (2002), Enterprise Inter And Intra- Organizational Integration, Building  International Consensus, Kluwer Academic
+
+\bibitem{IEEEhowto:kopka}
+Ahmad and Othman, Malaysian Centre for Geospatial Data Infrastructure (MaCGDI) (2007). “Implementation of Electronic Government in Malaysia: The Status and Potential for Better Service to the Public”. Public Sector ICT Management Review. October 2006 – March 2007, Vol. 1 No. 1.
+
+\end{thebibliography}
+
+
+
+
+% that's all folks
+\end{document}
+
+

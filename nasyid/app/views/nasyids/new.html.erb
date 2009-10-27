@@ -149,7 +149,8 @@ border=0>
         <LI><A 
         href="">Tentang</A> 
 
-        <LI><A 
+        <LI><A
+         
         href="http://127.0.0.1:3000/nasyids/new">Upload 
         Lirik</A> </LI></UL></SPAN></TD></TR>
   <TR bgColor=#2f60bf>
@@ -160,75 +161,12 @@ border=0>
           <TD vAlign=top align=middle bgColor=#b4d5f5><BR>
             <TABLE cellSpacing=0 cellPadding=4 width="95%" border=0>
               <TBODY>
-              <TR>
-                <TD vAlign=center align=middle>
-                  <FORM action=http://www.liriknasyid.com/index.php 
-                  method=get><INPUT id=s size=30 name=s>&nbsp; <SELECT name=c> 
-                    <OPTION value=all selected>A L L</OPTION> <OPTION 
-                    value=artis>Artis/Munsyid</OPTION> <OPTION 
-                    value=title>Judul</OPTION> <OPTION 
-                    value=album>Album</OPTION> <OPTION 
-                  value=lirik>Lirik</OPTION></SELECT> <INPUT type=hidden 
-                  value=lirik name=mod> &nbsp;<INPUT class=button type=submit value=Search name=Submit> 
-                  </FORM></TD></TR></TBODY></TABLE><BR>
+
             <TABLE cellSpacing=0 cellPadding=4 width="95%" align=center 
 border=0>
               <TBODY>
               <TR>
-                <TD class=abjad align=middle bgColor=#ffffff><A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/a">a</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/b">b</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/c">c</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/d">d</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/e">e</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/f">f</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/g">g</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/h">h</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/i">i</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/j">j</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/k">k</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/l">l</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/m">m</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/n">n</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/o">o</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/p">p</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/q">q</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/r">r</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/s">s</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/t">t</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/u">u</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/v">v</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/w">w</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/x">x</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/y">y</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/abjad/z">z</A> 
-                  . <A 
-                  href="http://www.liriknasyid.com/index.php/lirik/all">all</A> 
+     
                 </TD></TR></TBODY></TABLE><BR><BR>
             <DIV align=center><B>Kirim Lirik / Chord 
             </B><BR><BR><B>Ketentuan</B></DIV>
@@ -249,15 +187,15 @@ border=0>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :Judul %><br />
+    <%= f.label :Judul %>*<br />
     <%= f.text_field :Judul %>
   </p>
   <p>
-    <%= f.label :Artis %><br />
+    <%= f.label :Artis %>*<br />
     <%= f.text_field :Artis %>
   </p>
   <p>
-    <%= f.label :Album %><br />
+    <%= f.label :Album %>*<br />
     <%= f.text_field :Album %>
   </p>
   <p>
@@ -265,7 +203,7 @@ border=0>
     <%= f.text_field :Pengirim %>
   </p>
   <p>
-    <%= f.label :Email %><br />
+    <%= f.label :Email %>*<br />
     <%= f.text_field :Email %>
   </p>
   <p>
@@ -277,7 +215,7 @@ border=0>
     <%= f.text_field :Kategori %>
   </p>
   <p>
-    <%= f.label :Lirik %><br />
+    <%= f.label :Lirik %>*<br />
     <%= f.text_area :Lirik %>
   </p>
   <p>
@@ -288,7 +226,7 @@ border=0>
 <%= link_to '| Kembali |', nasyids_path %>
 </DIV></TD></TR></TBODY></TABLE></TD></TR>
   <TR bgColor=#2f60c0>
-    <TD vAlign=center align=middle height=30>
+    <TD vAlign=center align=left height=30>
       <DIV class=small>Lirik Nasyid © 2004-2006 Konsep &amp; design by 
       kank_agus, programming by achedy. <BR><b>Translated to Ruby by Azwan B Mohamed (P47882) & Mohd Asri Mohamad Stambul (P50093), FTSM, UKM</b> <BR>Hosting Supported by <A 
       href="http://muntada.com/"><FONT color=#fffff>muntada.com</FONT></A></DIV><!--google analytics by achedy-->
